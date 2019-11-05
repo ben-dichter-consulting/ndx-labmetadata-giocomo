@@ -18,49 +18,49 @@ def main():
         name='acquisition_sampling_rate',
         doc='acquisition sampling rate in Hz',
         dtype='float',
-        shape=(None,),
+        shape=None,
     )
 
     LabMetaData.add_attribute(
         name='number_of_electrodes',
         doc='number of electrodes on the probe',
         dtype='int',
-        shape=(None,),
+        shape=None,
     )
 
     LabMetaData.add_attribute(
         name='file_path',
         doc='filepath for where the raw data is saved',
         dtype='text',
-        shape=(None,),
+        shape=None,
     )
 
     LabMetaData.add_attribute(
         name='bytes_to_skip',
         doc='the number of bytes at the beginning of the file to skip',
         dtype='int',
-        shape=(None,),
+        shape=None,
     )
 
     LabMetaData.add_attribute(
         name='raw_data_dtype',
         doc='data type (dtype) of raw voltage data',
         dtype='text',
-        shape=(None,),
+        shape=None,
     )
 
     LabMetaData.add_attribute(
         name='high_pass_filtered',
         doc='binary variable as to whether raw data was high-pass filtered or not',
         dtype='bool',
-        shape=(None,),
+        shape=None,
     )
 
-    LabMetaData.add_attribute(
+    LabMetaData.add_dataset(
         name='movie_start_time',
         doc='the time the mouse visualization movie started playing',
-        dtype='datetime',
-        shape=(None,),
+        dtype='isodatetime',
+        shape=None,
     )
 
     new_data_types = [LabMetaData]

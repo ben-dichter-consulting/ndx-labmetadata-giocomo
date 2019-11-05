@@ -5,36 +5,23 @@ groups:
   attributes:
   - name: acquisition_sampling_rate
     dtype: float
-    shape:
-    - null
     doc: acquisition sampling rate in Hz
   - name: number_of_electrodes
     dtype: int
-    shape:
-    - null
     doc: number of electrodes on the probe
   - name: file_path
     dtype: text
-    shape:
-    - null
     doc: filepath for where the raw data is saved
   - name: bytes_to_skip
     dtype: int
-    shape:
-    - null
     doc: the number of bytes at the beginning of the file to skip
   - name: raw_data_dtype
     dtype: text
-    shape:
-    - null
     doc: data type (dtype) of raw voltage data
   - name: high_pass_filtered
     dtype: bool
-    shape:
-    - null
     doc: binary variable as to whether raw data was high-pass filtered or not
+  datasets:
   - name: movie_start_time
-    dtype: datetime
-    shape:
-    - null
+    dtype: isodatetime
     doc: the time the mouse visualization movie started playing
