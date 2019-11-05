@@ -6,6 +6,6 @@ namespaces:
   schema:
   - namespace: core
     neurodata_types:
-    - NWBDataInterface
+    - LabMetaData
   - source: ndx-labmetadata-giocomo.extensions.yaml
   version: 0.0.1

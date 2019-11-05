@@ -68,7 +68,8 @@ def main():
 
     new_data_types = [LabMetaData_ext]
 
-    ns_builder.include_type('NWBDataInterface', namespace='core')
+    #ns_builder.include_type('NWBDataInterface', namespace='core')
+    ns_builder.include_type('LabMetaData', namespace='core')
 
     export_spec(ns_builder, new_data_types)
 
