@@ -1,12 +1,12 @@
 from datetime import datetime
 from dateutil.tz import tzlocal
 from pynwb import NWBFile, NWBHDF5IO
-from ndx_labmetadata_giocomo import LabMetaData
+from ndx_labmetadata_giocomo import LabMetaData_ext
 
 nwb = NWBFile('session_description', 'identifier', datetime.now().astimezone())
 
 # Creates LabMetaData container
-lab_metadata = LabMetaData(
+lab_metadata = LabMetaData_ext(
     name='LabMetaData',
     acquisition_sampling_rate=1000.,
     number_of_electrodes=10,

@@ -9,4 +9,4 @@ ns_path = os.path.join(here, 'spec', name + '.namespace.yaml')
 
 load_namespaces(ns_path)
 
-LabMetaData = get_class('LabMetaData', name)
+LabMetaData_ext = get_class('LabMetaData_ext', name)
