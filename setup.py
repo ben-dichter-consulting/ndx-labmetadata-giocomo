@@ -7,7 +7,7 @@ from shutil import copy2
 
 setup_args = {
     'name': 'ndx-labmetadata-giocomo',
-    'version': '0.0.2',
+    'version': '0.0.1',
     'description': 'LabMetaData.',
     'author': 'Luiz Tauffer and Ben Dichter',
     'author_email': 'ben.dichter@gmail.com',

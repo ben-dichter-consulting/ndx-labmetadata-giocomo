@@ -31,7 +31,7 @@ def main():
     LabMetaData.add_attribute(
         name='file_path',
         doc='filepath for where the raw data is saved',
-        dtype='str',
+        dtype='text',
         shape=(None,),
     )
 
@@ -45,7 +45,7 @@ def main():
     LabMetaData.add_attribute(
         name='raw_data_dtype',
         doc='data type (dtype) of raw voltage data',
-        dtype='str',
+        dtype='text',
         shape=(None,),
     )
 
@@ -59,7 +59,7 @@ def main():
     LabMetaData.add_attribute(
         name='movie_start_time',
         doc='the time the mouse visualization movie started playing',
-        dtype='bool',
+        dtype='datetime',
         shape=(None,),
     )
 
