@@ -32,7 +32,7 @@ def _copy_spec_files(project_dir):
     ns_path = os.path.join(project_dir, 'spec', 'ndx-labmetadata-giocomo.namespace.yaml')
     ext_path = os.path.join(project_dir, 'spec', 'ndx-labmetadata-giocomo.extensions.yaml')
 
-    dst_dir = os.path.join(project_dir, 'src', 'pynwb', 'ndx-labmetadata-giocomo', 'spec')
+    dst_dir = os.path.join(project_dir, 'src', 'pynwb', 'ndx_labmetadata_giocomo', 'spec')
     if not os.path.exists(dst_dir):
         os.mkdir(dst_dir)
 
