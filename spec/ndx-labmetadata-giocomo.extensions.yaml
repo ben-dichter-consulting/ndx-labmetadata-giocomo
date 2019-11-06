@@ -21,7 +21,6 @@ groups:
   - name: high_pass_filtered
     dtype: bool
     doc: binary variable as to whether raw data was high-pass filtered or not
-  datasets:
   - name: movie_start_time
-    dtype: isodatetime
+    dtype: float
     doc: the time the mouse visualization movie started playing

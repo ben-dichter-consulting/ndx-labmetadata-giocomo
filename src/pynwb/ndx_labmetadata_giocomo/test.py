@@ -1,5 +1,4 @@
 from datetime import datetime
-from dateutil.tz import tzlocal
 from pynwb import NWBFile, NWBHDF5IO
 from ndx_labmetadata_giocomo import LabMetaData_ext
 
@@ -14,7 +13,7 @@ lab_metadata = LabMetaData_ext(
     bytes_to_skip=2,
     raw_data_dtype='int16',
     high_pass_filtered=False,
-    movie_start_time=datetime(2019, 11, 5, tzinfo=tzlocal()),
+    movie_start_time=13.6,
 )
 
 # Add to file

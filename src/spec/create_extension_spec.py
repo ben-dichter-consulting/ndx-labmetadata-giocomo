@@ -59,10 +59,10 @@ def main():
         shape=None,
     )
 
-    LabMetaData_ext.add_dataset(
+    LabMetaData_ext.add_attribute(
         name='movie_start_time',
         doc='the time the mouse visualization movie started playing',
-        dtype='isodatetime',
+        dtype='float',
         shape=None,
     )
 
