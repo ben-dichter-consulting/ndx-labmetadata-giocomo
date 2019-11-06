@@ -23,6 +23,7 @@ nwb.add_lab_meta_data(lab_metadata)
 with NWBHDF5IO('test_labmetadata.nwb', 'w') as io:
     io.write(nwb)
 
+# Read nwb file and check its content
 with NWBHDF5IO('test_labmetadata.nwb', 'r', load_namespaces=True) as io:
     nwb = io.read()
     print(nwb)
