@@ -1,4 +1,4 @@
-from pynwb.spec import NWBNamespaceBuilder, NWBGroupSpec, NWBAttributeSpec
+from pynwb.spec import NWBNamespaceBuilder, NWBGroupSpec
 from export_spec import export_spec
 from pynwb.file import LabMetaData
 
@@ -14,7 +14,6 @@ def main():
         doc='type for storing lab metadata',
         neurodata_type_def='LabMetaData_ext',
         neurodata_type_inc='LabMetaData',
-        #neurodata_type_inc='NWBDataInterface',
         )
 
     LabMetaData_ext.add_attribute(
@@ -68,7 +67,6 @@ def main():
 
     new_data_types = [LabMetaData_ext]
 
-    #ns_builder.include_type('NWBDataInterface', namespace='core')
     ns_builder.include_type('LabMetaData', namespace='core')
 
     export_spec(ns_builder, new_data_types)
