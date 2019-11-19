@@ -26,4 +26,4 @@ with NWBHDF5IO('test_labmetadata.nwb', 'w') as io:
 # Read nwb file and check its content
 with NWBHDF5IO('test_labmetadata.nwb', 'r', load_namespaces=True) as io:
     nwb = io.read()
-    print(nwb)
+    print(nwb.lab_meta_data['LabMetaData'])
