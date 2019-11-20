@@ -24,3 +24,6 @@ groups:
   - name: movie_start_time
     dtype: float
     doc: the time the mouse visualization movie started playing
+  - name: subject_brain_region
+    dtype: text
+    doc: the name of the brain region where the electrode probe is recording from

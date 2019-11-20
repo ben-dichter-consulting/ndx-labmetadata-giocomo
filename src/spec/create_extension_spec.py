@@ -64,6 +64,12 @@ def main():
         dtype='float',
         shape=None,
     )
+    LabMetaData_ext.add_attribute(
+        name='subject_brain_region',
+        doc='the name of the brain region where the electrode probe is recording from',
+        dtype='text',
+        shape=None,
+    )
 
     new_data_types = [LabMetaData_ext]
 

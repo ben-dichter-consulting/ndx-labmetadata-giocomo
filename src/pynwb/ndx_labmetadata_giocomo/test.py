@@ -14,6 +14,7 @@ lab_metadata = LabMetaData_ext(
     raw_data_dtype='int16',
     high_pass_filtered=False,
     movie_start_time=13.6,
+    subject_brain_region='Medial Entorhinal Cortex'
 )
 
 # Add to file
