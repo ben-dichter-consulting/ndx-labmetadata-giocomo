@@ -1,5 +1,8 @@
 # ndx-labmetadata-giocomo extension for NWB:N
 
+Extension of the [lab_meta_data](https://pynwb.readthedocs.io/en/stable/pynwb.file.html#pynwb.file.NWBFile.lab_meta_data) field.
+A collaboration with [Giocomo Lab](https://giocomolab.weebly.com/).
+
 [![PyPI version]()
 
 [Python Installation](#python-installation)
