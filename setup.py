@@ -5,27 +5,32 @@ import os
 from setuptools import setup, find_packages
 from shutil import copy2
 
-setup_args = {
-    'name': 'ndx-labmetadata-giocomo',
-    'version': '0.0.1',
-    'description': 'LabMetaData.',
-    'author': 'Luiz Tauffer and Ben Dichter',
-    'author_email': 'ben.dichter@gmail.com',
-    'url': '',
-    'license': '',
-    'install_requires': ['pynwb'],
-    'packages': find_packages('src/pynwb'),
-    'package_dir': {'': 'src/pynwb'},
-    'package_data': {'ndx_labmetadata_giocomo': [
-        'spec/ndx-labmetadata-giocomo.namespace.yaml',
-        'spec/ndx-labmetadata-giocomo.extensions.yaml',
-    ]},
-    'classifiers': [
-        "Intended Audience :: Developers",
-        "Intended Audience :: Science/Research",
-    ],
-    'zip_safe': False
-}
+
+# Get the long description from the README file
+with open('README.md', 'r') as f:
+    long_description = f.read()
+
+# Get requirements
+with open('requirements.txt') as f:
+    install_requires = f.read().strip().split('\n')
+
+setup_args = dict(
+    name='ndx-labmetadata-giocomo',
+    version='0.1.0',
+    description='NWB extension for storing metadata for Giocomo lab',
+    author='Luiz Tauffer, Szonja Weigl and Ben Dichter',
+    author_email='ben.dichter@gmail.com',
+    url='https://github.com/catalystneuro/ndx-labmetadata-giocomo',
+    packages=find_packages('src/pynwb'),
+    package_dir={'': 'src/pynwb'},
+    include_package_data=True,
+    package_data={'ndx_labmetadata_giocomo': ['spec/ndx-labmetadata-giocomo.namespace.yaml',
+                                              'spec/ndx-labmetadata-giocomo.extensions.yaml']},
+    classifiers=["Intended Audience :: Developers",
+                 "Intended Audience :: Science/Research"],
+    zip_safe=False,
+    install_requires=install_requires,
+)
 
 
 def _copy_spec_files(project_dir):
