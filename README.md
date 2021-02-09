@@ -11,7 +11,7 @@ A collaboration with [Giocomo Lab](https://giocomolab.weebly.com/).
 
 ### Python Installation
 ```bash
-pip install git+https://github.com/ben-dichter-consulting/ndx-labmetadata-giocomo.git
+pip install ndx-labmetadata-giocomo
 ```
 
 ### Python Usage
