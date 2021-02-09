@@ -34,12 +34,10 @@ class LabMetaDataExtensionTest(unittest.TestCase):
         # Add to file
         self.nwbfile.add_lab_meta_data(lab_metadata_extension)
 
-        filename = 'test_labmetadata.nwb'
-
-        with NWBHDF5IO(filename, 'w') as io:
+        with NWBHDF5IO(self.filename, 'w') as io:
             io.write(self.nwbfile)
 
-        with NWBHDF5IO(filename, mode='r', load_namespaces=True) as io:
+        with NWBHDF5IO(self.filename, mode='r', load_namespaces=True) as io:
             nwbfile = io.read()
 
         for metadata_key, metadata_value in lab_metadata.items():
