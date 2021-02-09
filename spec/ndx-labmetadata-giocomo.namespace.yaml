@@ -1,11 +1,15 @@
 namespaces:
-- author: Luiz Tauffer and Ben Dichter
-  contact: ben.dichter@gmail.com
-  doc: type for storing lab metadata
+- author:
+  - Luiz Tauffer
+  - Szonja Weigl
+  - Ben Dichter
+  contact:
+  - ben.dichter@gmail.com
+  doc: type for storing lab metadata for Giocomo lab
   name: ndx-labmetadata-giocomo
   schema:
   - namespace: core
     neurodata_types:
     - LabMetaData
   - source: ndx-labmetadata-giocomo.extensions.yaml
-  version: 0.0.1
+  version: 0.1.0
